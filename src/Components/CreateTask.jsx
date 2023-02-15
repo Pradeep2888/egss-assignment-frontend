@@ -6,23 +6,6 @@ function CreateTask({handleTask}) {
 
     const [task,setTask]=useState()
     
-    // const handleTask=()=>{
-    //     const token=JSON.parse(localStorage.getItem("token"))
-    //      let obj={
-    //         "task":task,
-    //         "token":token[0]
-    //     }
-    //     // console.log(obj)
-    //      axios.post("http://localhost:4000/user/addtask",obj)
-    //      .then((r)=>{
-    //         console.log(r)
-    //         alert("Task Added Successfully")
-    //      })
-    //      .catch((e)=>{
-    //         console.log(e)
-    //         alert("Some Thing Went Wrong")
-    //      })
-    // }
 
 
   return (

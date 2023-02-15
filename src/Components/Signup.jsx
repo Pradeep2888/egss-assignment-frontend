@@ -15,7 +15,7 @@ function Signup() {
     }
     // console.log(obj)
 
-    axios.post("http://localhost:4000/user/register",obj)
+    axios.post("https://backend-test-api-egss.onrender.com/user/register",obj)
     .then((r)=>{
      console.log(r)
      alert("User Registerd Succefully")

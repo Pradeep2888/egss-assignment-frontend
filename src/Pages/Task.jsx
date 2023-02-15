@@ -12,7 +12,7 @@ function Task() {
     const getData=()=>{
         const token=JSON.parse(localStorage.getItem("token"))
         
-        axios.get(`http://localhost:4000/user/gettask/${token}`)
+        axios.get(`https://backend-test-api-egss.onrender.com/user/gettask/${token}`)
         .then((r)=>{
             // console.log("hi")
             setData(r.data.data)
@@ -30,7 +30,7 @@ function Task() {
             "token":token
         }
         // console.log(obj)
-         axios.post("http://localhost:4000/user/addtask",obj)
+         axios.post("https://backend-test-api-egss.onrender.com/user/addtask",obj)
          .then((r)=>{
             // console.log(r)
             getData()

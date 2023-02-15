@@ -15,7 +15,7 @@ function EditTask() {
             taskId
         }
 
-        axios.patch(`http://localhost:4000/user/edittask`,obj)
+        axios.patch(`https://backend-test-api-egss.onrender.com/user/edittask`,obj)
         .then((r)=>{
             // console.log(r)
             alert("Task Updated")
